@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.cdnfonts.com/css/technology?styles=26651");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    text-decoration: none;
+    list-style: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: 	#DAEBE3;
+    color: #657166;
+    margin: 0;
+    height: 100vh;
+    font-family: "Montserrat";
+  }
+
+
+@media (max-width: 576px) {
+}
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #99CDD8;
+  box-shadow: 0 8px 32px 0 	#657166;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px 0 solid 	#657166;
+  z-index: 1;
+  font-family: "Montserrat";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(239, 239, 239);
+  font-family: "Montserrat";
+}
+
+.logo a span {
+  color: #F3C3B2;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 7px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  transition: 0.2s all ease-in-out;
+  color: rgb(255, 255, 255);
+}
+
+/* .menu:hover a {
+  opacity: 0.4;
+} */
+
+.menu a:hover {
+  opacity: 1;
+  color: #9f9f9f;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    background: rgba(5, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px 0 solid rgba(255, 255, 255, 0.18);
+
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu a {
+    margin-left: 12px;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
